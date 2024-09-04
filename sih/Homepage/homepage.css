@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-strip {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+.top-strip nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.top-strip nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.content-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.content-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-section p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.video-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-row video {
+    max-width: 30%;
+    height: auto;
+}
+
+.bottom-strip {
+    background-color: grey;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.8)), 
+                url('https://example.com/agriculture-cartoon.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group label,
+.select-label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    pointer-events: none;
+    transition: 0.3s ease;
+    color: #aaa;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-bottom: 2px solid #6a11cb;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group select:focus + .select-label,
+.input-group select:not(:placeholder-shown) + .select-label {
+    top: -20px;
+    font-size: 12px;
+    color: #6a11cb;
+}
+
+/* Custom dropdown arrow for select */
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper select {
+    -webkit-appearance: none; /* Remove default arrow in WebKit browsers */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    appearance: none; /* Remove default arrow in other browsers */
+    padding-right: 30px; /* Space for custom arrow */
+}
+
+.select-wrapper::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #aaa;
+}
+
+input[type="submit"] {
+    background-color: #6a11cb;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2575fc;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register as New User</h2>
+        <form>
+            <div class="input-group">
+                <input type="text" id="newUsername" name="newUsername" required>
+                <label for="newUsername">Create Username</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="newPassword" name="newPassword" required>
+                <label for="newPassword">Create Password</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <label for="confirmPassword">Confirm Password</label>
+            </div>
+            <div class="input-group">
+                <label for="idProofType" class="select-label"></label>
+                <select id="idProofType" name="idProofType" required>
+                    <option value="" disabled selected>Select ID Proof</option>
+                    <option value="aadhar">Aadhaar</option>
+                    <option value="pan">PAN</option>
+                    <option value="ration">Ration Card</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="text" id="idProofNumber" name="idProofNumber" required>
+                <label for="idProofNumber">ID Proof Number</label>
+            </div>
+            <div>
+                <form>
+                    <label for="imageUpload">Upload an image:</label>
+                    <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="input-group">
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+                <label for="phoneNumber">Phone Number</label>
+            </div>
+            <div class="input-group">
+                <input type="number" name="otp" id="otp">
+                <label for="otp">Enter OTP</label>
+
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Gmail</label>
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
